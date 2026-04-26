@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitNourish AI | Personalized Nutrition Intelligence</title>
+  <meta
+    name="description"
+    content="FitNourish AI - personalized nutrition prediction, meal planning, health progress prediction, and grocery optimization."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Intro / Splash Screen -->
+  <div id="loader" class="loader-screen">
+    <div class="loader-overlay"></div>
+    <div class="loader-grid"></div>
+    <div class="loader-content">
+      <span class="mini-badge">AI • Nutrition • Health • Grocery Intelligence</span>
+      <h1>FitNourish AI</h1>
+      <p>
+        A smart personalized nutrition platform that predicts nutritional needs,
+        supports meal generation and planning, tracks health progress, and helps users
+        find cheaper and nearby groceries.
+      </p>
+      <div class="loader-actions">
+        <button id="enterSite" class="btn btn-primary">Enter Experience</button>
+        <a href="#home" id="skipIntro" class="btn btn-outline">Skip Intro</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="#home" class="brand">
+        <span class="brand-mark">FN</span>
+        <span class="brand-text">FitNourish AI</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav">
+        <a href="#home">Home</a>
+
+        <div class="dropdown">
+          <button class="dropbtn" type="button">Project Scope <span>▼</span></button>
+          <div class="dropdown-menu">
+            <a href="#literature">Literature Survey</a>
+            <a href="#research-gap">Research Gap</a>
+            <a href="#problem-solution">Research Problem &amp; Solution</a>
+            <a href="#objectives">Research Objectives</a>
+            <a href="#methodology">Methodology</a>
+            <a href="#technologies">Technologies</a>
+          </div>
+        </div>
+
+        <a href="#features">Features</a>
+        <a href="#milestones">Milestones</a>
+
+        <div class="dropdown">
+          <button class="dropbtn" type="button">Downloads <span>▼</span></button>
+          <div class="dropdown-menu">
+            <a href="#downloads">Documents</a>
+            <a href="#downloads">Presentations</a>
+            <a href="#downloads">Poster</a>
+          </div>
+        </div>
+
+        <a href="#about">About Us</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero section">
+      <div class="hero-bg"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Personalized Nutrition • Meal Planning • Health Progress • Grocery Optimization</span>
+          <h1>Smarter Nutrition Decisions for Healthier Daily Living</h1>
+          <p>
+            FitNourish AI is an AI-powered fitness and nutrition platform designed to generate
+            personalized nutrition targets using demographic, physiological, activity-related,
+            and health-condition data. Beyond prediction, the system supports meal generation,
+            nutrition planning, health progress prediction, and smart grocery optimization.
+          </p>
+          <div class="hero-actions">
+            <a href="#features" class="btn btn-primary">Explore Platform</a>
+            <a href="#project-overview" class="btn btn-outline">View Research Scope</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-box">
+              <strong>4</strong>
+              <span>Nutrition outputs</span>
+            </div>
+            <div class="stat-box">
+              <strong>AI</strong>
+              <span>XGBoost-based prediction</span>
+            </div>
+            <div class="stat-box">
+              <strong>Smart</strong>
+              <span>Meal + grocery intelligence</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-1">
+          <div class="glass-panel">
+            <div class="glass-top">
+              <span class="live-dot"></span>
+              <span>FitNourish AI Experience</span>
+            </div>
+            <div class="rings">
+              <div class="ring ring-lg">Calories</div>
+              <div class="ring ring-md">Protein</div>
+              <div class="ring ring-sm">Carbs</div>
+              <div class="ring ring-xs">Fat</div>
+            </div>
+            <ul class="tick-list">
+              <li>AI meal generation</li>
+              <li>Nutrition planning support</li>
+              <li>Health progress prediction</li>
+              <li>Smart grocery optimization</li>
+              <li>Explainable nutrition intelligence</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section id="project-overview" class="section section-dark">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Project Overview</span>
+          <h2>A Complete Smart Wellness Concept</h2>
+          <p>
+            FitNourish AI is designed as a digital nutrition ecosystem that combines machine learning,
+            health-aware personalization, meal support, and grocery intelligence in one platform.
+          </p>
+        </div>
+
+        <div class="overview-grid">
+          <article class="overview-card reveal">
+            <h3>Research Focus</h3>
+            <p>
+              Developing a machine learning-based nutrition prediction component that estimates
+              daily calories, protein, carbohydrates, and fat using structured user-specific data.
+            </p>
+          </article>
+          <article class="overview-card reveal delay-1">
+            <h3>User Value</h3>
+            <p>
+              Helping users make better daily decisions through meal generation, meal planning,
+              progress support, and cost-aware grocery recommendations.
+            </p>
+          </article>
+          <article class="overview-card reveal delay-2">
+            <h3>Innovation Value</h3>
+            <p>
+              Moving beyond basic nutrition calculators by combining rich health features,
+              multi-output AI prediction, and explainable machine learning.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Core Features</span>
+          <h2>More Than a Calorie Calculator</h2>
+          <p>
+            The platform is designed as a complete smart assistant for personalized nutrition,
+            daily planning, and smarter food-related decisions.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="icon">🥗</div>
+            <h3>AI Meal Generation</h3>
+            <p>
+              Generates meal ideas aligned with predicted calorie and macronutrient targets.
+            </p>
+          </article>
+          <article class="feature-card reveal delay-1">
+            <div class="icon">📅</div>
+            <h3>Meal Planning</h3>
+            <p>
+              Helps users organize daily and weekly meal structures based on personalized goals.
+            </p>
+          </article>
+          <article class="feature-card reveal delay-2">
+            <div class="icon">📈</div>
+            <h3>Health Progress Prediction</h3>
+            <p>
+              Supports user awareness by reflecting activity behaviour and progress-oriented health trends.
+            </p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="icon">🧠</div>
+            <h3>Personalized Nutrition Prediction</h3>
+            <p>
+              Predicts daily calories, protein, carbohydrates, and fat using user-specific inputs.
+            </p>
+          </article>
+          <article class="feature-card reveal delay-1">
+            <div class="icon">🛒</div>
+            <h3>Grocery Optimization</h3>
+            <p>
+              Helps users find cheaper and nearby stores for ingredients required in their meal plans.
+            </p>
+          </article>
+          <article class="feature-card reveal delay-2">
+            <div class="icon">🔍</div>
+            <h3>Explainable AI</h3>
+            <p>
+              Makes nutrition predictions more transparent by showing feature-level reasoning support.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Literature -->
+    <section id="literature" class="section section-soft">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Project Scope</span>
+          <h2>Literature Survey</h2>
+        </div>
+        <div class="content-card reveal">
+          <p>
+            Existing research shows that personalized nutrition is increasingly important in digital health.
+            Traditional methods mainly rely on fixed equations and limited demographic variables, while modern
+            research supports richer feature integration, including physiological and activity-related signals.
+            Advances in machine learning, multi-output prediction, and explainable AI make it possible to build
+            nutrition systems that are more accurate, adaptive, and user-centered than traditional estimation methods.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Gap -->
+    <section id="research-gap" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Research Gap</h2>
+        </div>
+        <div class="content-card reveal">
+          <p>
+            Many nutrition systems still depend on static formulas, narrow feature sets, calorie-only outputs,
+            and weak interpretability. There is still a clear need for a system that combines demographic,
+            physiological, activity-related, and health-aware data while producing a complete and explainable
+            nutrition profile.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem & Solution -->
+    <section id="problem-solution" class="section section-soft">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Research Problem &amp; Solution</h2>
+        </div>
+        <div class="content-card reveal">
+          <p>
+            The key research problem is that personalized nutrition requirements are difficult to estimate
+            accurately using generalized traditional methods. FitNourish AI addresses this by using an
+            XGBoost-based multi-output regression framework that predicts calorie and macronutrient needs
+            from structured user-specific data and supports interpretability through SHAP-based explanation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Objectives -->
+    <section id="objectives" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Research Objectives</h2>
+        </div>
+        <div class="objective-grid">
+          <article class="objective-card reveal">
+            <h3>Main Objective</h3>
+            <p>
+              To design and implement a machine learning-based multi-output prediction system that estimates
+              personalized nutritional requirements using demographic, physiological, activity-related,
+              and health-condition user data.
+            </p>
+          </article>
+          <article class="objective-card reveal delay-1">
+            <h3>Specific Objectives</h3>
+            <ul>
+              <li>Collect and organize relevant user-specific data</li>
+              <li>Apply preprocessing and feature engineering</li>
+              <li>Train a multi-output XGBoost-based nutrition model</li>
+              <li>Evaluate predictive performance and generalization</li>
+              <li>Improve transparency using SHAP-based explainability</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodology -->
+    <section id="methodology" class="section section-dark">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Methodology</h2>
+          <p>
+            The methodology combines structured user data, preprocessing, feature engineering,
+            nutritional baseline logic, XGBoost-based multi-output regression, evaluation,
+            and explainable AI.
+          </p>
+        </div>
+
+        <div class="timeline methodology-timeline reveal">
+          <div class="step">
+            <span>1</span>
+            <div>
+              <h3>Data Collection</h3>
+              <p>Demographic, physiological, activity, health, and goal-related data were collected.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span>2</span>
+            <div>
+              <h3>Preprocessing</h3>
+              <p>Missing-value handling, cleaning, categorical encoding, numerical scaling, and splitting.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span>3</span>
+            <div>
+              <h3>Feature Engineering</h3>
+              <p>BMI, Activity Ratio, Heart Efficiency, Steps per Minute, and Stress Impact were created.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span>4</span>
+            <div>
+              <h3>Prediction Model</h3>
+              <p>XGBoost with MultiOutputRegressor was used to predict calories and macronutrients.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span>5</span>
+            <div>
+              <h3>Interpretation</h3>
+              <p>SHAP was used to improve transparency and support explainable nutrition prediction.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies -->
+    <section id="technologies" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Technologies</h2>
+        </div>
+
+        <div class="tech-grid">
+          <div class="tech reveal">Python</div>
+          <div class="tech reveal delay-1">Pandas</div>
+          <div class="tech reveal delay-2">NumPy</div>
+          <div class="tech reveal">Scikit-learn</div>
+          <div class="tech reveal delay-1">XGBoost</div>
+          <div class="tech reveal delay-2">SHAP</div>
+          <div class="tech reveal">FastAPI</div>
+          <div class="tech reveal delay-1">React Native</div>
+          <div class="tech reveal delay-2">Expo</div>
+          <div class="tech reveal">PostgreSQL</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Milestones -->
+    <section id="milestones" class="section section-soft">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Milestones</h2>
+        </div>
+
+        <div class="timeline reveal">
+          <div class="step">
+            <span>01</span>
+            <div>
+              <h3>Research Proposal</h3>
+              <p>Problem definition, literature review, and initial system scope establishment.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span>02</span>
+            <div>
+              <h3>System Design</h3>
+              <p>Dataset design, model architecture selection, and functional planning.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span>03</span>
+            <div>
+              <h3>Prototype Development</h3>
+              <p>Frontend concepts, prediction workflow, and smart feature support design.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span>04</span>
+            <div>
+              <h3>Testing & Evaluation</h3>
+              <p>Performance measurement, cross-validation, and SHAP-based model interpretation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Downloads -->
+    <section id="downloads" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Downloads</h2>
+        </div>
+        <div class="download-grid">
+          <a class="download-card reveal" href="#" onclick="return false;">
+            <strong>Project Proposal</strong>
+            <span>PDF document</span>
+          </a>
+          <a class="download-card reveal delay-1" href="#" onclick="return false;">
+            <strong>Research Paper</strong>
+            <span>PDF document</span>
+          </a>
+          <a class="download-card reveal delay-2" href="#" onclick="return false;">
+            <strong>Presentation Slides</strong>
+            <span>PPT / PDF</span>
+          </a>
+          <a class="download-card reveal" href="#" onclick="return false;">
+            <strong>Final Report</strong>
+            <span>Documentation</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section-dark">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>About Us</h2>
+        </div>
+
+        <div class="team-meta reveal">
+          <div>
+            <h3>Supervisor</h3>
+            <p>Mrs. Anjalie Gamage</p>
+          </div>
+          <div>
+            <h3>Co-Supervisor</h3>
+            <p>Mr. Dhammika De Silva</p>
+          </div>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-card reveal">
+            <h3>Hasindu</h3>
+            <p>
+              Contributed to project architecture, machine learning integration, and research coordination.
+            </p>
+          </article>
+          <article class="team-card reveal delay-1">
+            <h3>Tharushi</h3>
+            <p>
+              Contributed to nutrition prediction research, methodology, documentation, and content preparation.
+            </p>
+          </article>
+          <article class="team-card reveal delay-2">
+            <h3>Yuwani</h3>
+            <p>
+              Contributed to user-focused feature planning, application structure, and solution presentation.
+            </p>
+          </article>
+          <article class="team-card reveal">
+            <h3>Poornima</h3>
+            <p>
+              Contributed to research support tasks, implementation discussions, and project deliverables.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Achievements</h2>
+        </div>
+        <div class="achievement-grid">
+          <div class="achievement-card reveal">
+            <strong>AI-Powered Multi-Output Prediction</strong>
+            <p>
+              A prediction component capable of generating calories, protein, carbohydrates, and fat together.
+            </p>
+          </div>
+          <div class="achievement-card reveal delay-1">
+            <strong>Feature-Rich Personalization</strong>
+            <p>
+              Uses demographic, physiological, activity-related, and health-condition data for smarter predictions.
+            </p>
+          </div>
+          <div class="achievement-card reveal delay-2">
+            <strong>Smart Grocery Intelligence</strong>
+            <p>
+              Supports users by identifying convenient and cost-effective ingredient purchasing choices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-soft">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Contact Us</h2>
+          <p>
+            For academic inquiries, collaboration, or project communication, contact the FitNourish AI team.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <h3>Email</h3>
+            <p>fitnourishai.project@gmail.com</p>
+          </div>
+          <div class="contact-card reveal delay-1">
+            <h3>Institution</h3>
+            <p>Sri Lanka Institute of Information Technology (SLIIT)</p>
+          </div>
+          <div class="contact-card reveal delay-2">
+            <h3>Project Domain</h3>
+            <p>Personalized nutrition, AI wellness systems, health prediction, grocery optimization</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="toTop" class="to-top" aria-label="Go to top">↑</button>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div>
+        <strong>FitNourish AI</strong>
+        <p>
+          Personalized nutrition prediction, meal generation, progress support, and smart grocery optimization
+          in one AI-powered fitness and wellness experience.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about">Team</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
