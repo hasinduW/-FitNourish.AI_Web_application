@@ -704,6 +704,30 @@ a {
   color: #d8f2ec;
 }
 
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d8f2ec;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.youtube-icon:hover {
+  color: #ff0000;
+  transform: scale(1.15);
+}
+
+.github-icon:hover {
+  color: #ffffff;
+  transform: scale(1.15);
+}
+
 /* TO TOP */
 .to-top {
   position: fixed;
